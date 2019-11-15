@@ -29,6 +29,10 @@ function query($db, $query, $returnlist = true) {
 
 }
 
+function dbClose($db) {
+    mysqli_close($db);
+}
+
 function insert($db, $tabel, $velden, $data) {
     // let op de parameters
 }

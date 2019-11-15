@@ -7,6 +7,8 @@ require 'import.php';
 
 $db = dbConnection();
 
-$data = query($db, "select * from aanmeldingen");
+$data = query($db, "select * from aanmeldingen", false);
+
+$dbClose($db);
 
 print_r($data);
