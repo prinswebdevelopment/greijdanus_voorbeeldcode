@@ -12,7 +12,7 @@ function query($db, $query, $returnlist = true) {
     $resultaat = mysqli_query($db, $query);
 
     if(!$resultaat) {
-        echo "fout";
+        echo "fout in query"; // dit kan beter
         return false;
     }
 
